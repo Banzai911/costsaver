@@ -3,49 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/css/style.css">
     <title>Document</title>
 </head>
 <body>
-<div class="bg">
-<header>
-    <div class="header__logo justify-content">
-        <img class="header__logo-img" src="/public/img/logo.svg" alt="">
-    </div>
-</header>
 <main>
-    <section class="filter-section justify-content">
+    <section class="section section-form">
         <div class="container">
-            <div class="wrapper">
-                <div class="filter__form-list">
-                    <form action="" class="justify-content row">
-                        <div class="filter__form-item">
+            <div class="wrapper column align-center justify-content">
+                <div class="wrapper logo-wrapper">
+                    <img src="/public/img/logo.svg" alt="">
+                </div>
+                <div class="wrapper form-wrapper">
+                    <form action="" class="form__form-wrapper row align-center">
+                        <div class="form__form-item">
                             <label>
-                                <input type="text" name="departure">
+                                <img src="./public/img/air.svg" alt="">
+                                <input type="text" name="departure" placeholder="Место отправления"
+                                       class="form-wrapper-item">
                             </label>
                         </div>
-                        <div class="filter__form-item">
+                        <div class="form__form-item">
                             <label>
-                                <input type="date">
+                                <img src="./public/img/check-in.svg" alt="">
+                                <input type="text" placeholder="Заезд и отъезд" class="form-wrapper-item">
                             </label>
                         </div>
-                        <div class="filter__form-item justify-content">
-                            <ul class="filter__form-item-dropdown">
-                                <li>Взрослых</li>
-                                <li>Детей</li>
-                                <li>Номера</li>
-                                <li>Возраст детей</li>
-                            </ul>
+                        <div class="form__form-item">
+                            <label>
+                                <img src="./public/img/guest.svg" alt="">
+                                <ul class="form-item-menu">
+                                    <li>Гостей</li>
+                                    <img src="./public/img/arrorws.svg" alt="" class="form-item-menu-arrows">
+                                    <ul class="form-item-menu-dropdown">
+                                        <li>Взрослых</li>
+                                        <li>Детей</li>
+                                        <li>Номера</li>
+                                        <li>Возраст детей</li>
+                                    </ul>
+                                </ul>
+
+                            </label>
+
+                        </div>
+                        <div class="form__form-item">
+                            <label>
+                                <input type="button" value="Искать отель" class="form-item-button">
+                            </label>
                         </div>
                     </form>
                 </div>
-
+                <span class="title">
+                    Ваш гид в мире отелей.
+                </span>
+<!--                <div class="login">-->
+<!--                    Личный кабинет-->
+<!--                </div>-->
             </div>
         </div>
     </section>
 </main>
-</div>
-<script src="public/js/script.js"></script>
 
+
+<script src="public/js/script.js"></script>
 </body>
 </html>
